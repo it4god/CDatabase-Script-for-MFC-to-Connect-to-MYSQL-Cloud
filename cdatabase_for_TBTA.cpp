@@ -15,8 +15,6 @@
 
 CMainFrame::CMainFrame()
 {
-CMainFrame::CMainFrame()
-{
 	
 	CDatabase database;
 	CString UpdateQuery;
@@ -28,7 +26,7 @@ CMainFrame::CMainFrame()
 	CString command = "select";
 	CString DNS;
 	//if (database.OpenEx(_T("DRIVER={MySQL ODBC 5.1 Driver};UID=root;PORT=3306;DATABASE=bible;SERVER=localhost;"), CDatabase::noOdbcDialog))
-	//if (database.OpenEx(_T("DRIVER={MySQL ODBC 5.1 Driver};UID=limpin30_admin;PORT=3306;DATABASE=limpin30_analyzer;SERVER=151.106.103.31;Password=enenen123
+	//if (database.OpenEx(_T("DRIVER={MySQL ODBC 5.1 Driver};UID=limpin30_admin;PORT=3306;DATABASE=limpin30_analyzer;SERVER=151.106.103.31;Password=enenen123"), CDatabase::noOdbcDialog))
 	TRY{
 	if (database.OpenEx(_T("DRIVER={MySQL ODBC 5.1 Driver};UID=limpin30_admin;PORT=3306;DATABASE=limpin30_analyzer;SERVER=151.106.103.31;Password=enenen123"), CDatabase::noOdbcDialog))
 		{
